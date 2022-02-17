@@ -1,0 +1,782 @@
+@import "null.css";
+
+@font-face {
+   font-family: Appetite;
+   src: url('../fonts/appetite-italic.woff') format('woff'), url('../fonts/appetite-italic.woff2') format('woff2');
+   font-weight: 400;
+   font-style: italic;
+   font-display: swap;
+}
+@font-face {
+   font-family: Madelikesslab;
+   src: url('../fonts/madelikesslab.woff') format('woff'), url('../fonts/madelikesslab.woff2') format('woff2');
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+}
+@font-face {
+   font-family: Monly;
+   src: url('../fonts/monly_serif.woff') format('woff'), url('../fonts/monly_serif.woff2') format('woff2');
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+}
+@font-face {
+   font-family: Monly;
+   src: url('../fonts/monly_serif_bold.woff') format('woff'), url('../fonts/monly_serif_bold.woff2') format('woff2');
+   font-weight: 700;
+   font-style: normal;
+   font-display: swap;
+}
+@font-face {
+   font-family: Nautiluspompilius;
+   src: url('../fonts/nautiluspompilius.woff') format('woff'), url('../fonts/nautiluspompilius.woff2') format('woff2');
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+}
+@font-face {
+   font-family: Philosopher;
+   src: url('../fonts/philosopher_bold_italic.woff') format('woff'), url('../fonts/philosopher_bold_italic.woff2') format('woff2');
+   font-weight: 700;
+   font-style: italic;
+   font-display: swap;
+}
+@font-face {
+   font-family: Philosopher;
+   src: url('../fonts/philosopher_italic.woff') format('woff'), url('../fonts/philosopher_italic.woff2') format('woff2');
+   font-weight: 400;
+   font-style: italic;
+   font-display: swap;
+}
+@font-face {
+   font-family: Tangak;
+   src: url('../fonts/tangak.woff') format('woff'), url('../fonts/tangak.woff2') format('woff2');
+   font-weight: 400;
+   font-style: italic;
+   font-display: swap;
+}
+/*
+   font-family: Madelikesslab, sans-serif;
+   font-weight: 400;
+
+   font-family: Appetite, sans-serif;
+   font-weight: 400;
+   font-style: italic;
+
+   font-family: Monly, sans-serif;
+   font-weight: 700;
+   font-weight: 400;
+
+font-family: Nautiluspompilius, sans-serif;
+   font-weight: 400;
+
+   
+
+   font-family: Philosopher, sans-serif;
+   font-weight: 400;
+   font-style: italic;
+   font-weight: 700;
+*/
+
+
+
+[class*="__container"] {
+   max-width: 1050px;
+   margin: 0px auto;
+}
+.wrapper{
+   min-height: 100%;
+   overflow: hidden;
+   
+}
+
+.header {
+   background-color: rgba(0, 255, 255, 0.151);
+   text-align: center;
+   padding: 40px 0 20px 0;
+   box-shadow: 0 10px 10px 0 rgb(16, 16, 17);
+}
+.header__container {
+   font-size: 30px;
+   font-family: Philosopher, sans-serif;
+   font-weight: 400;
+   font-style: italic;
+   color: rgb(12, 66, 174);
+   transition: all 0.3s ease 0s;
+   min-height: 80px;
+   
+}
+.header__container p:hover{
+   display: inline-block;
+   color: rgb(255, 0, 170);
+   outline: 3px dotted rgb(255, 0, 170);
+   font-size: 40px;
+   transition: all 0.3s ease 0s;
+   border-radius: 15px 0;
+   padding: 5px;
+   box-shadow: 0 10px 10px 0 rgba(255, 0, 0, 0.247);
+}
+/*
+=======================================================================*/
+.main {
+}
+.main__container {
+}
+.identification {
+}
+.list {
+   margin: 0 0 30px 0;
+   text-align: center;
+
+}
+.link>li {
+   display: inline-block;
+   padding: 30px;
+}
+.link>li>a{
+   color: rgb(17, 7, 7);
+
+}
+.link>li>a:first-of-type{
+   padding: 15px 20px;
+   background-color: rgba(16, 16, 71, 0.568);
+   border-radius: 30px;
+   box-shadow: 0 15px 15px 0 rgb(17, 24, 37);
+   margin: 0;
+}
+.link>li>a:first-of-type:hover{
+   background-color: rgba(5, 105, 105, 0.432);
+   box-shadow: 0 10px 10px 0 rgb(0, 0, 0);
+   display: block;
+   margin: 4px 0 0 0;
+   transition: all 0.3s ease 0s;
+}
+.link>li>a:first-of-type:active{
+   background-color: rgba(11, 163, 163, 0.432);
+   box-shadow: 0 5px 5px 0 rgb(0, 0, 0);
+   display: block;
+   margin: 5px 0 0 0;
+}
+
+.link>li>a:first-of-type:visited{
+   background-color: rgba(21, 245, 245, 0.432);
+}
+
+.game-first {
+   background-color: rgba(0, 0, 0, 0.116);
+   box-shadow:inset 5px 10px 10px 20px rgba(11, 11, 87, 0.226), 0 10px 10px 0 rgb(0, 0, 0);
+   padding: 30px;
+   border-radius: 10px;
+   margin: 0 0 40px 0;
+}
+.game-first:hover{
+   background-color: rgba(95, 48, 139, 0.171);
+   box-shadow:inset 0 10px 10px 0px rgba(13, 9, 17, 0.377);
+   
+}
+.text {
+   text-align: center;
+   color: rgb(18, 56, 61);
+   font-family: Madelikesslab, sans-serif;
+   font-weight: 400;
+   font-size: 30px;
+   padding: 20px 0 20px 0;
+   
+}
+.title-easy {
+   font-family: Philosopher, sans-serif;
+   font-weight: 400;
+   font-style: italic;
+   font-size: 20px;
+   color: rgb(7, 100, 100);
+   margin: 0 0 20px 0;
+}
+/*
+====================================================================*/
+.game-list {
+}
+.game-list>li{
+   display: inline-block;
+    padding: 20px;
+   background-color: rgba(5, 82, 46, 0.842);
+   color: rgb(139, 49, 161);
+   border-radius: 15px;
+   box-shadow: 0 15px 15px 0 rgb(0, 0, 0);
+   margin: 0 60px 60px 0;
+}
+.game-list>li:hover{
+   display: inline-block;
+   box-shadow: 0 10px 10px 0 rgb(0, 0, 0);
+   margin: 4px;
+   background-color: rgba(6, 126, 70, 0.842);
+   
+}
+.game-list>li:hover::before{
+   content: "";
+   background-color: aqua;
+
+}
+.game-list>li:active{
+   display: inline-block;
+   box-shadow: 0 5px 5px 0 rgb(0, 0, 0);
+   margin: 5px;
+}
+.game-list>li>a{
+  color: rgb(225, 201, 231);
+}
+.game-list li:last-of-type,
+.game-list li:nth-of-type(17){
+   display: inline-block;
+   margin-bottom: 0;
+}
+.game-list li:last-of-type{
+   margin-right: 0;
+}
+.game-items1:hover{
+   display: inline-block;
+   background: url("../img/cat-1.gif") center / cover no-repeat;
+   width: 200px;
+   height: 200px;
+   color: rgba(240, 248, 255, 0);
+   transition: all 0.3s ease 0s;
+}
+.game-items1:active {
+   background-color: rgb(20, 39, 77);
+}
+.game-items2:hover{
+   display: inline-block;
+   background: url("../img/cat-2.gif") center / cover no-repeat;
+   width: 200px;
+   height: 200px;
+   color: rgba(240, 248, 255, 0);
+}
+.game-items2:active {
+   display: inline-block;
+   background-color: aqua;
+}
+.game-items3:hover{
+   display: inline-block;
+   background: url("../img/cat-3.gif") center / cover no-repeat;
+   width: 200px;
+   height: 200px;
+   color: rgba(240, 248, 255, 0);
+}
+
+.game-items5:hover{
+   display: inline-block;
+   background: url("../img/cat-5.gif") center / cover no-repeat;
+   width: 200px;
+   height: 200px;
+   color: rgba(240, 248, 255, 0);
+   margin: 10px;
+}
+.game-items8:hover{
+   display: inline-block;
+   background: url("../img/cat-8.gif") center / cover no-repeat;
+   width: 200px;
+   height: 200px;
+   color: rgba(240, 248, 255, 0);
+}
+.game-items7:hover{
+   display: inline-block;
+   background: url("../img/cat-7.gif") center / cover no-repeat;
+   width: 200px;
+   height: 200px;
+   color: rgba(240, 248, 255, 0);
+}
+.game-items4:hover{
+   display: inline-block;
+   background: url("../img/cat-4.gif") center / cover no-repeat;
+   width: 200px;
+   height: 200px;
+   color: rgba(240, 248, 255, 0);
+}
+.game-items6:hover{
+   display: inline-block;
+   background: url("../img/cat-6.gif") center / cover no-repeat;
+   width: 200px;
+   height: 200px;
+   color: rgba(240, 248, 255, 0);
+}
+.game-items9:hover{
+   display: inline-block;
+   background: url("../img/cat-9.gif") center / cover no-repeat;
+   width: 200px;
+   height: 200px;
+   color: rgba(240, 248, 255, 0);
+}
+.find {
+   margin: 0 0 30px 0;
+   text-align: center;;
+}
+.find p {
+   font-size: 40px;
+   font-family: Philosopher, sans-serif;
+   font-weight: 400;
+   font-style: italic;
+   color: rgb(23, 71, 25);
+   transition: all 0.3s ease 0s;
+   }
+.find p:hover {
+color: rgb(8, 163, 13);
+   }
+.find p::after {
+   content: "";
+   display:block;
+   height: 1.5px;
+   width: 40%;
+   margin: 0 auto;
+   background-color: rgb(23, 71, 25);
+   text-align: center;
+
+}
+.find p:hover::after{
+   content: "";
+   display:block;
+   height: 1.5px;
+   width: 80%;
+   margin: 0 auto;
+   background-color: rgb(8, 163, 13);
+   transition: all 0.3s ease 0s;
+}
+
+
+.button-first li{
+   display: inline-block;
+   padding: 0 40px 0 0;
+   
+}
+.find-button{
+   text-align: center;
+}
+.first {
+   padding: 15px 40px;
+   background-color: rgba(7, 66, 66, 0);
+   font-size: 20px;
+   text-transform: uppercase;
+   border-radius: 20px;
+   font-family: Madelikesslab, sans-serif;
+   font-weight: 400;
+   color: rgba(142, 209, 209, 0);
+}
+.first:hover {
+   background-color: rgba(7, 66, 66, 0.932);
+   color: rgb(66, 238, 238);
+   transition: all 0.3s ease 0s;
+}
+.first:hover::before {
+   content: "";
+   display: inline-block;
+   background: url("../img/emotions/greate.gif") center / 25px no-repeat;
+   min-width: 30px;
+   min-height: 25px;
+}
+.button-second {
+  
+}
+.second {
+    padding: 15px 40px;
+   background-color: rgba(7, 66, 66, 0);
+   font-size: 20px;
+   text-transform: uppercase;
+   border-radius: 20px;
+   font-family: Madelikesslab, sans-serif;
+   font-weight: 400;
+   color: rgba(142, 209, 209, 0);
+   
+}
+.second:hover {
+   background-color: rgba(7, 66, 66, 0.932);
+   color: rgb(66, 238, 238);
+   transition: all 0.3s ease 0s;
+}
+.second:hover::before {
+   content: "";
+   display: inline-block;
+   background: url("../img/emotions/sadness.gif") center / 35px no-repeat;
+   min-width: 40px;
+   min-height: 25px;
+}
+/*
+=====================================================================*/
+.game-second {
+   background-color: rgba(0, 255, 255, 0.123);
+   text-align: center;
+   font-family: Philosopher, sans-serif;
+   font-weight: 400;
+   font-style: italic;
+   font-size: 20px;
+   margin: 0 0 40px 0;
+   border-radius: 70px;
+}
+.game-second p{
+   margin: 0 0 30px 0;
+}
+
+.game-second p:first-of-type {
+   color: rgb(20, 117, 214);
+   padding-top: 20px;
+
+}
+.game-second p:first-of-type:hover {
+   display: inline-block;
+   font-size: 30px;
+   text-decoration: underline;
+   color: rgb(139, 16, 119);
+}
+.game-second p:first-of-type::before{
+   content: "";
+   display: inline-block;
+   transition: all 0.4s ease 0s;
+   border-radius: 50%;
+   overflow: hidden;
+}
+.game-second p:first-of-type:hover::before {
+   content: "";
+   display: inline-block;
+   background: url("../img/flowers/blue.jpg") center / 70px no-repeat;
+   box-shadow: 0 5px 5px 0 rgb(0, 0, 0);
+   min-width: 40px;
+   min-height: 40px;
+   margin: 0 5px 0 0;
+   transform: rotate(360deg) scale(1.3);
+
+}
+.game-second p:nth-of-type(2) {
+   color: rgba(23, 9, 156, 0.918);
+
+}
+.game-second p:nth-of-type(2):hover {
+   display: inline-block;
+   font-size: 30px;
+   text-decoration: underline;
+   color: rgb(114, 33, 13);
+}
+.game-second p:nth-of-type(7n+2)::before{
+  content: "";
+   display: inline-block;
+   transition: all 0.4s ease 0s;
+   border-radius: 50%;
+   overflow: hidden;
+}
+.game-second p:nth-of-type(7n+2):hover::before {
+   content: "";
+   display: inline-block;
+   background: url("../img/flowers/chrysanthemums.jpg") center / 70px no-repeat;
+   min-width: 40px;
+   min-height: 40px;
+   transform: rotate(360deg) scale(1.3);
+   box-shadow: 0 5px 5px 0 rgb(0, 0, 0);
+   margin: 0 5px 0 0;
+}
+
+.game-second p:nth-of-type(3){
+   color: rgb(76, 83, 9);
+   text-decoration: line-through;
+}
+
+.game-second p:nth-of-type(3):hover{
+   display: inline-block;
+   font-size: 30px;
+   color: rgb(51, 99, 99);
+   text-transform: uppercase;
+   text-decoration: none;
+}
+
+.game-second p:nth-of-type(8n+3)::before{
+   content: "";
+   display: inline-block;
+   transition: all 0.4s ease 0s;
+   border-radius: 50%;
+   overflow: hidden;
+}
+.game-second p:nth-of-type(8n+3):hover::before{
+   content: "";
+   display: inline-block;
+   background: url("../img/flowers/peonies.jpg") center / 70px no-repeat;
+   min-width: 40px;
+   min-height: 40px;
+   transform: rotate(360deg) scale(1.3);
+   box-shadow: 0 5px 5px 0 rgb(0, 0, 0);
+   margin: 0 5px 0 0;
+}
+.game-second p:nth-of-type(4){
+   color: rgb(148, 81, 211);
+   text-decoration: underline;
+   text-transform: lowercase;
+}
+
+.game-second p:nth-of-type(4):hover{
+   display: inline-block;
+   font-size: 40px;
+   box-shadow: 0 10px 10px 0 rgb(0, 0, 0);
+   border-radius: 15px;
+   padding: 10px;
+   outline: 4px dotted rgb(238, 61, 208);
+}
+
+.game-second p:nth-of-type(6n+4)::after{
+   content: "";
+   display: inline-block;
+   transition: all 0.4s ease 0s;
+   border-radius: 50%;
+   overflow: hidden;
+}
+.game-second p:nth-of-type(6n+4):hover::after{
+   content: "";
+   display: inline-block;
+   background: url("../img/flowers/pink.jpg") center / 70px no-repeat;
+   min-width: 40px;
+   min-height: 40px;
+   transform: rotate(360deg) scale(1.3);
+   box-shadow: 0 5px 5px 0 rgb(0, 0, 0);
+   margin: 0 0 0 10px;
+}
+.game-second p:nth-of-type(5){
+   color: #DC143C;
+   text-shadow: 0 5px 5px rgb(0, 0, 0);
+}
+
+.game-second p:nth-of-type(5):hover{
+   display: inline-block;
+   font-size: 40px;
+   text-align: right;
+   max-width: 400px;
+   box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.329);
+   padding: 10px;
+   border-radius: 20px;
+}
+
+.game-second p:nth-of-type(5)::before{
+   content: "";
+   display: inline-block;
+   transition: all 0.4s ease 0s;
+   border-radius: 50%;
+   overflow: hidden;
+}
+.game-second p:nth-of-type(5):hover::before{
+   content: "";
+   display: inline-block;
+   background: url("../img/flowers/red.jpg") center / 100px no-repeat;
+   min-width: 40px;
+   min-height: 40px;
+   transform: rotate(360deg) scale(1.3);
+   box-shadow: 0 5px 5px 0 rgb(0, 0, 0);
+   margin: 0 20px 0 0;
+}
+.game-second p:nth-of-type(6){
+   color: #20B2AA;
+   text-decoration: underline;
+   text-transform: uppercase;
+}
+
+.game-second p:nth-of-type(6):hover{
+   display: inline-block;
+   color: #1b746f;
+   border: 3px solid #153d3d;
+   padding: 20px;
+}
+
+.game-second p:nth-of-type(6)::before{
+   content: "";
+   display: inline-block;
+   transition: all 0.4s ease 0s;
+   border-radius: 50%;
+   overflow: hidden;
+}
+.game-second p:nth-of-type(6):hover::before{
+   content: "";
+   display: inline-block;
+   background: url("../img/flowers/roses.jpg") center / 100px no-repeat;
+   min-width: 40px;
+   min-height: 40px;
+   transform: rotate(360deg) scale(1.3);
+   box-shadow: 0 5px 5px 0 rgb(0, 0, 0);
+   margin: 0 20px 0 0;
+}
+.game-second p:nth-of-type(7){
+   color: #FF4500;
+   font-style: italic;
+   
+}
+
+.game-second p:nth-of-type(7):hover{
+   display: inline-block;
+   font-size: 50px;
+   font-family: Nautiluspompilius, sans-serif;
+   font-weight: 400;
+   color: #1b746f;
+
+}
+
+.game-second p:nth-of-type(7)::before{
+   content: "";
+   display: inline-block;
+   transition: all 0.4s ease 0s;
+   border-radius: 50%;
+   overflow: hidden;
+}
+.game-second p:nth-of-type(7):hover::before{
+   content: "";
+   display: inline-block;
+   background: url("../img/flowers/red.jpg") center / 100px no-repeat;
+   min-width: 40px;
+   min-height: 40px;
+   transform: rotate(360deg) scale(1.3);
+   box-shadow: 0 5px 5px 0 rgb(0, 0, 0);
+   margin: 0 20px 0 0;
+}
+.game-second p:nth-of-type(8){
+   color: #9400D3;
+}
+
+.game-second p:nth-of-type(8):hover{
+   display: inline-block;
+   color: #8B008B;
+   font-size: 40px;
+}
+
+.game-second p:nth-of-type(8)::before{
+   content: "";
+   display: inline-block;
+   transition: all 0.4s ease 0s;
+   border-radius: 50%;
+   overflow: hidden;
+}
+.game-second p:nth-of-type(8):hover::before{
+   content: "";
+   display: inline-block;
+   background: url("../img/flowers/blue.jpg") center / 100px no-repeat;
+   min-width: 40px;
+   min-height: 40px;
+   transform: rotate(360deg) scale(1.3);
+   box-shadow: 0 5px 5px 0 rgb(0, 0, 0);
+   margin: 0 20px 0 0;
+}
+.game-second p:nth-of-type(9){
+   color: #2F4F4F;
+   
+}
+
+.game-second p:nth-of-type(9):hover{
+   display: inline-block;
+   border-bottom: 4px dotted #2F4F4F;
+   font-size: 40px;
+}
+
+.game-second p:nth-of-type(9)::before{
+   content: "";
+   display: inline-block;
+   transition: all 0.4s ease 0s;
+   border-radius: 50%;
+   overflow: hidden;
+}
+.game-second p:nth-of-type(9):hover::before{
+   content: "";
+   display: inline-block;
+   background: url("../img/flowers/chrysanthemums.jpg") center / 100px no-repeat;
+   min-width: 40px;
+   min-height: 40px;
+   transform: rotate(360deg) scale(1.3);
+   box-shadow: 0 5px 5px 0 rgb(0, 0, 0);
+   padding: 0 20px 0 0;
+}
+.game-second p:nth-of-type(10){
+   color: #A52A2A;
+   font-size: 30px;
+   text-decoration: underline;
+
+}
+
+.game-second p:nth-of-type(10):hover{
+   display: inline-block;
+}
+
+.game-second p:nth-of-type(10)::before{
+   content: "";
+   display: inline-block;
+   transition: all 0.4s ease 0s;
+   border-radius: 50%;
+   overflow: hidden;
+}
+
+
+.game-second p:nth-of-type(11){
+   color: #A52A2A;
+   font-size: 30px;
+   text-decoration: underline;
+
+}
+
+.game-second p:nth-of-type(11):hover{
+   display: inline-block;
+}
+
+.game-second p:nth-of-type(11)::before{
+   content: "";
+   display: inline-block;
+   transition: all 0.4s ease 0s;
+   border-radius: 50%;
+   overflow: hidden;
+}
+.game-second p:nth-of-type(11):hover::before{
+   content: "";
+   display: inline-block;
+   background: url("../img/flowers/peonies.jpg") center / 100px no-repeat;
+   min-width: 40px;
+   min-height: 40px;
+   transform: rotate(360deg) scale(1.3);
+   box-shadow: 0 5px 5px 0 rgb(0, 0, 0);
+   margin: 0 20px 0 0;
+}
+.game-second p:last-of-type {
+   color: rgb(51, 134, 26);
+   padding-bottom: 20px;
+
+}
+.game-second p:last-of-type:hover {
+   display: inline-block;
+   font-size: 30px;
+   text-decoration: underline;
+   color: rgb(58, 52, 57);
+}
+.game-second p:last-of-type::before{
+   content: "";
+   display: inline-block;
+   transition: all 0.4s ease 0s;
+   border-radius: 50%;
+   overflow: hidden;
+}
+.game-second p:last-of-type:hover::before {
+   content: "";
+   display: inline-block;
+   background: url("../img/flowers/roses.jpg") center / 70px no-repeat;
+   box-shadow: 0 5px 5px 0 rgb(0, 0, 0);
+   min-width: 40px;
+   min-height: 40px;
+   margin: 0 5px 0 0;
+   transform: rotate(360deg) scale(1.3);
+
+}
+.game-maket {
+   text-align: center;
+   margin: 0 0 30px 0;
+}
+.maket-button {
+   padding: 15px;
+   background: radial-gradient(circle, rgba(251,204,63,0.47692580450148814) 0%, rgba(252,70,70,0.9559174011401436) 99%);
+   color: #800000;
+   border-radius: 20px;
+}
+.footer {
+   background-color: rgba(12, 66, 174, 0.288);
+   min-height: 80px;
+   text-align: center;
+   padding: 20px 0 0 0;
+}
+.footer__container {
+   color: rgb(22, 48, 70);
+}
+
+
